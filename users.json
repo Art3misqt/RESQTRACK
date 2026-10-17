@@ -1,0 +1,178 @@
+[
+  {
+    "id": "USR-2B5110FF",
+    "fullname": "Test Verified User",
+    "email": "test.verified@bfp.gov.ph",
+    "sex": "male",
+    "age": 30,
+    "idType": "national",
+    "employeeId": "BFP-TEST-0001",
+    "station": "sector-4",
+    "salt": "d655daa1aa9c284a34db75dac1696356",
+    "passwordHash": "59aa3241302f7fa3944b3d9761ce19fe4b988a0b11e9d6ee6251e14aade11cd74fcda3fa51c944a16f5077973b3598bf1efb6853f8125dd656e3b0206d06b69b",
+    "credentialsFileName": "credentials.pdf",
+    "captures": {
+      "idFront": "server-data/uploads/USR-2B5110FF-id-front.png",
+      "idBack": "server-data/uploads/USR-2B5110FF-id-back.png",
+      "face": "server-data/uploads/USR-2B5110FF-face.png"
+    },
+    "status": "verified",
+    "role": "responder",
+    "createdAt": "2026-10-11T01:02:31.546Z",
+    "verifiedAt": "2026-10-11T01:02:31.546Z"
+  },
+  {
+    "id": "USR-8DB47FA1",
+    "fullname": "Test Pending User",
+    "email": "test.pending@bfp.gov.ph",
+    "sex": "female",
+    "age": 27,
+    "idType": "postal",
+    "employeeId": "BFP-TEST-0002",
+    "station": "sector-1a",
+    "salt": "3bf40faa37df4e94ade0155b77d51578",
+    "passwordHash": "27aac2ae36c8472cc2b51e8d88d51b6f0f0803c974c7a75945fcbd1fcd5b8c9b0e29223a0cf3e8529506a5746517fdcedfb3c53a966eeb9b08ee3b16dd0b2c59",
+    "credentialsFileName": "credentials.png",
+    "captures": {
+      "idFront": "server-data/uploads/USR-8DB47FA1-id-front.png",
+      "idBack": "server-data/uploads/USR-8DB47FA1-id-back.png",
+      "face": null
+    },
+    "status": "pending",
+    "role": "responder",
+    "createdAt": "2026-10-11T01:02:31.624Z",
+    "verifiedAt": null
+  },
+  {
+    "id": "USR-8B7BC539",
+    "fullname": "Art Levin T. Saliwan",
+    "email": "artsaliwan801@gmail.com",
+    "sex": "male",
+    "age": 21,
+    "idType": "national",
+    "employeeId": "BFP-NCR-904821",
+    "station": "ldrrmo",
+    "salt": "dfa6646ade09c2b323f335600cd3f49a",
+    "passwordHash": "bd432254f511a1fcc1110778d69399c92c5047d1696f15c8cdc9391bf288c1ea73287136ab8527cf6039794156851a4bab4a1e90d227875922b63ce57f295882",
+    "credentialsFileName": "Insurance-Agency-ID-Card-Template-edit-online.png",
+    "captures": {
+      "idFront": "server-data/uploads/USR-8B7BC539-id-front.png",
+      "idBack": "server-data/uploads/USR-8B7BC539-id-back.png",
+      "face": "server-data/uploads/USR-8B7BC539-face.png"
+    },
+    "status": "verified",
+    "role": "responder",
+    "createdAt": "2026-10-11T06:35:28.704Z",
+    "verifiedAt": "2026-10-11T06:35:28.704Z"
+  },
+  {
+    "id": "USR-6B93A380",
+    "fullname": "Insp. Eduardo M. Reyes",
+    "email": "e.reyes@bfp.gov.ph",
+    "sex": "male",
+    "age": 34,
+    "idType": "national",
+    "employeeId": "BFP-NCR-904822",
+    "station": "ldrrmo",
+    "salt": "7e9de99fb5d111f2af4ea000e1f6c7f9",
+    "passwordHash": "0ecd83654f572890bd72b7dad069d80a4b2a44bb8dd03cb6b54ee41cf444c0128d771dbb3c782a8d480171412fb3a978e9dd384bb459d4ec2cf9868102d7aaf2",
+    "credentialsFileName": "Insurance-Agency-ID-Card-Template-edit-online.png",
+    "captures": {
+      "idFront": "server-data/uploads/USR-6B93A380-id-front.png",
+      "idBack": "server-data/uploads/USR-6B93A380-id-back.png",
+      "face": "server-data/uploads/USR-6B93A380-face.png"
+    },
+    "status": "verified",
+    "role": "responder",
+    "createdAt": "2026-10-11T06:47:53.250Z",
+    "verifiedAt": "2026-10-11T06:47:53.250Z"
+  },
+  {
+    "id": "USR-0699C072",
+    "fullname": "Insp. Art Levin T. Saliwan",
+    "email": "e.reyessantos@bfp.gov.ph",
+    "sex": "male",
+    "age": 21,
+    "idType": "national",
+    "employeeId": "BFP-NCR-905673",
+    "station": "ldrrmo",
+    "salt": "96e0760bd1394522f8f128155f954b0f",
+    "passwordHash": "91a1717bd1569ed8856551ad3c7b54d767abfb9078952dd1c41709051f2faba4e1bef4aca0a857db1f7947be753e900b92964971bb1ec53960302a0e5cd9b04f",
+    "credentialsFileName": "Insurance-Agency-ID-Card-Template-edit-online.png",
+    "captures": {
+      "idFront": "server-data/uploads/USR-0699C072-id-front.png",
+      "idBack": "server-data/uploads/USR-0699C072-id-back.png",
+      "face": "server-data/uploads/USR-0699C072-face.png"
+    },
+    "status": "verified",
+    "role": "responder",
+    "createdAt": "2026-10-11T06:54:16.453Z",
+    "verifiedAt": "2026-10-11T06:54:16.453Z"
+  },
+  {
+    "id": "USR-5999A72E",
+    "fullname": "Saliwan Art",
+    "email": "saliwan@gmail.com",
+    "sex": "male",
+    "age": 21,
+    "idType": "national",
+    "employeeId": "BFP-NCR-905389",
+    "station": "ldrrmo",
+    "salt": "3f7b8c1b424aaa35e2a69cd334291454",
+    "passwordHash": "c19664c9fb926090628651d1fa143615caa2146cc6e56d57876588d27a1f3da4fcb017ed89f75d2398ae7d509124a03d58cfa7de7c7b09aed82b51d06c781bbe",
+    "credentialsFileName": "1.png",
+    "captures": {
+      "idFront": "server-data/uploads/USR-5999A72E-id-front.png",
+      "idBack": "server-data/uploads/USR-5999A72E-id-back.png",
+      "face": "server-data/uploads/USR-5999A72E-face.png"
+    },
+    "status": "verified",
+    "role": "responder",
+    "createdAt": "2026-10-11T10:18:48.251Z",
+    "verifiedAt": "2026-10-11T10:18:48.251Z"
+  },
+  {
+    "id": "USR-4124BF08",
+    "fullname": "Demo Responder",
+    "email": "demo@resqtrack.ph",
+    "sex": "male",
+    "age": 30,
+    "idType": "national",
+    "employeeId": "DEMO-0001",
+    "station": "ldrrrmo",
+    "salt": "aa1956dc8ec52f554af8f9ce7c87b819",
+    "passwordHash": "ca884d1f64210e623adf06c9542c0a4d2de9908e2abca3f53a0e4c87246e5053dd0f60e61e6f2add8756b5ae2bcd71cd25c37922816a9b6dacadd4cd43bf1235",
+    "credentialsFileName": "",
+    "captures": {
+      "idFront": null,
+      "idBack": null,
+      "face": null
+    },
+    "status": "verified",
+    "role": "responder",
+    "createdAt": "2026-10-11T10:24:17.605Z",
+    "verifiedAt": "2026-10-16T03:21:55.503Z"
+  },
+  {
+    "id": "USR-A48769D2",
+    "fullname": "Demo LDRRMO Admin",
+    "email": "admin@resqtrack.ph",
+    "sex": "female",
+    "age": 41,
+    "idType": "national",
+    "employeeId": "ADMIN-0001",
+    "station": "ldrrrmo",
+    "salt": "1fe4e4e05ad8738740c4814b7262b201",
+    "passwordHash": "a5e3bb843ca2b648bdfd288f4fb474ab963bdc44d8825fae73aa5205d18e2114669bf302f30e87c9a892329b7e88dcceff104bce361d552012640646529007f3",
+    "credentialsFileName": "",
+    "captures": {
+      "idFront": null,
+      "idBack": null,
+      "face": null
+    },
+    "status": "verified",
+    "role": "admin",
+    "createdAt": "2026-10-16T03:21:55.531Z",
+    "verifiedAt": "2026-10-16T03:21:55.531Z"
+  }
+]

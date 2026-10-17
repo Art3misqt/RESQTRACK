@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>esQtrack — Create Account</title>
+<meta name="description" content="esQtrack — register an authorized responder or administrative account.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&family=Montserrat:wght@600;700;800&display=swap">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="register.css">
+</head>
+<body class="page-register">
+
+<svg class="sprite" aria-hidden="true" focusable="false">
+  <symbol id="i-user" viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></symbol>
+  <symbol id="i-badge" viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="2"/><circle cx="8.6" cy="10.8" r="2.3"/><path d="M5 16.3a3.9 3.9 0 0 1 7.2 0"/><path d="M15.2 10h3.6M15.2 13.6h3.6"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></symbol>
+  <symbol id="i-lock" viewBox="0 0 24 24"><rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></symbol>
+  <symbol id="i-eye" viewBox="0 0 24 24"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></symbol>
+  <symbol id="i-eye-off" viewBox="0 0 24 24"><path d="M10.6 6.2A9.9 9.9 0 0 1 12 6c6.4 0 10 6 10 6a17.6 17.6 0 0 1-3.2 3.9M6.6 6.6A17.4 17.4 0 0 0 2 12s3.6 6 10 6a9.7 9.7 0 0 0 5.4-1.6"/><path d="M9.9 9.9a3 3 0 0 0 4.2 4.2"/><path d="m3 3 18 18"/></symbol>
+  <symbol id="i-upload" viewBox="0 0 24 24"><path d="M12 15.5V4"/><path d="m7.2 8.8 4.8-4.8 4.8 4.8"/><path d="M4 15.5v2.2a3.3 3.3 0 0 0 3.3 3.3h9.4a3.3 3.3 0 0 0 3.3-3.3v-2.2"/></symbol>
+  <symbol id="i-chevron" viewBox="0 0 24 24"><path d="m6 9.5 6 6 6-6"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h15"/><path d="m13 6 6 6-6 6"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+  <symbol id="i-tick" viewBox="0 0 12 12"><path d="M1.6 6.2 4.4 9 10.4 2.9"/></symbol>
+  <symbol id="i-gender" viewBox="0 0 24 24"><circle cx="10" cy="14" r="5"/><path d="M19.5 4.5 14.6 9.4M19.5 4.5h-4.2M19.5 4.5v4.2"/></symbol>
+  <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M8 3v4M16 3v4M3.5 10h17"/></symbol>
+  <symbol id="i-camera" viewBox="0 0 24 24"><rect x="2.5" y="6.5" width="13" height="11" rx="2.5"/><path d="m15.5 10.8 6-3.3v9l-6-3.3"/></symbol>
+  <symbol id="i-scan" viewBox="0 0 24 24"><path d="M4 8.4V6.5A2.5 2.5 0 0 1 6.5 4h1.9M15.6 4h1.9A2.5 2.5 0 0 1 20 6.5v1.9M20 15.6v1.9a2.5 2.5 0 0 1-2.5 2.5h-1.9M8.4 20H6.5A2.5 2.5 0 0 1 4 17.5v-1.9"/><circle cx="12" cy="12" r="3.1"/></symbol>
+  <symbol id="i-refresh" viewBox="0 0 24 24"><path d="M20 11a8 8 0 1 0-2.34 5.66"/><path d="M20 5v6h-6"/></symbol>
+</svg>
+
+<main class="scene">
+  <div class="stage">
+
+    <div class="bg" aria-hidden="true">
+      <span class="bg__strip"></span>
+      <span class="bg__disc"></span>
+      <span class="bg__wedge"></span>
+    </div>
+
+    <header class="brand">
+      <h1 class="brand__mark">esQtrack</h1>
+      <p class="brand__lead">Smart Emergency Response</p>
+      <p class="brand__sub">System with Image Processing and Real-Time Tracking</p>
+    </header>
+
+    <div class="responders" aria-hidden="true">
+      <span class="responder responder--group"><img src="img/responders.png" alt=""><i>responders.png</i></span>
+    </div>
+
+    <section class="panel panel--register" aria-labelledby="panel-title">
+      <span class="panel__rule" aria-hidden="true"></span>
+      <h2 class="visually-hidden" id="panel-title">Create account</h2>
+
+      <form class="panel__body" id="register-form" novalidate>
+
+        <ol class="steps" aria-label="Account creation progress">
+          <li class="steps__item is-active" data-step-item="1" aria-current="step">
+            <span class="steps__dot">1</span>
+            <span class="steps__label">Personal</span>
+          </li>
+          <li class="steps__item" data-step-item="2">
+            <span class="steps__dot">2</span>
+            <span class="steps__label">Security</span>
+          </li>
+          <li class="steps__item" data-step-item="3">
+            <span class="steps__dot">3</span>
+            <span class="steps__label">Verify</span>
+          </li>
+        </ol>
+
+        <!-- ============ Step 1 — Personal identification ============ -->
+
+        <div class="step" data-step="1">
+
+          <div class="form-grid">
+
+            <div class="field">
+              <label class="field__label" for="fullname">Full name <span class="req">*</span></label>
+              <div class="field__box">
+                <svg class="field__icon" aria-hidden="true"><use href="#i-user"/></svg>
+                <input class="field__input" id="fullname" name="fullname" type="text"
+                       value="Insp. Eduardo M. Reyes" autocomplete="name" spellcheck="false"
+                       aria-describedby="fullname-error">
+              </div>
+              <p class="field__error" id="fullname-error" role="alert" hidden></p>
+            </div>
+
+            <div class="field">
+              <label class="field__label" for="email">Email address <span class="req">*</span></label>
+              <div class="field__box">
+                <svg class="field__icon" aria-hidden="true"><use href="#i-mail"/></svg>
+                <input class="field__input" id="email" name="email" type="email"
+                       value="e.reyes@bfp.gov.ph" autocomplete="email" spellcheck="false"
+                       aria-describedby="email-error">
+              </div>
+              <p class="field__error" id="email-error" role="alert" hidden></p>
+            </div>
+
+            <div class="field" id="sex-field">
+              <label class="field__label" for="sex">Sex <span class="req">*</span></label>
+              <div class="field__box">
+                <svg class="field__icon" aria-hidden="true"><use href="#i-gender"/></svg>
+                <select class="field__input field__select" id="sex" name="sex"
+                        aria-describedby="sex-error">
+                  <option value="">Select sex…</option>
+                  <option value="male" selected>Male</option>
+                  <option value="female">Female</option>
+                </select>
+                <svg class="field__chevron" aria-hidden="true"><use href="#i-chevron"/></svg>
+              </div>
+              <p class="field__error" id="sex-error" role="alert" hidden></p>
+            </div>
+
+            <div class="field" id="age-field">
+              <label class="field__label" for="age">Age <span class="req">*</span></label>
+              <div class="field__box">
+                <svg class="field__icon" aria-hidden="true"><use href="#i-calendar"/></svg>
+                <input class="field__input" id="age" name="age" type="number"
+                       value="34" min="18" max="100" inputmode="numeric"
+                       aria-describedby="age-error">
+              </div>
+              <p class="field__error" id="age-error" role="alert" hidden></p>
+            </div>
+
+          </div>
+
+          <div class="section">
+            <p class="section__label">Valid ID</p>
+
+            <div class="field">
+              <label class="field__label" for="id-type">ID type <span class="req">*</span></label>
+              <div class="field__box">
+                <svg class="field__icon" aria-hidden="true"><use href="#i-badge"/></svg>
+                <select class="field__input field__select" id="id-type" name="idType"
+                        aria-describedby="id-type-error">
+                  <option value="">Select ID type…</option>
+                  <option value="national" selected>National ID (PhilSys)</option>
+                  <option value="postal">Postal ID</option>
+                  <option value="passport">Passport</option>
+                </select>
+                <svg class="field__chevron" aria-hidden="true"><use href="#i-chevron"/></svg>
+              </div>
+              <p class="field__error" id="id-type-error" role="alert" hidden></p>
+            </div>
+
+            <div class="idcam" id="idcam">
+              <div class="idcam__slot" id="idcam-front-slot">
+                <p class="face__caption" id="idcam-front-caption">Front side</p>
+                <div class="face__frame face__frame--card" id="idcam-front-frame" data-state="idle">
+                  <video id="idcam-front-video" playsinline muted hidden></video>
+                  <img id="idcam-front-shot" alt="Captured front side of valid ID" hidden>
+                  <canvas id="idcam-front-canvas" hidden></canvas>
+                  <span class="face__guide face__guide--card" aria-hidden="true"></span>
+                  <span class="face__badge" id="idcam-front-badge" aria-live="polite" hidden></span>
+                </div>
+                <div class="face__controls">
+                  <button class="ghostbtn" type="button" id="idcam-front-start">
+                    <svg aria-hidden="true"><use href="#i-camera"/></svg>
+                    <span>Start camera</span>
+                  </button>
+                  <button class="ghostbtn" type="button" id="idcam-front-capture" hidden>
+                    <svg aria-hidden="true"><use href="#i-scan"/></svg>
+                    <span>Capture front</span>
+                  </button>
+                  <button class="ghostbtn" type="button" id="idcam-front-retake" hidden>
+                    <svg aria-hidden="true"><use href="#i-refresh"/></svg>
+                    <span>Retake</span>
+                  </button>
+                </div>
+              </div>
+
+              <div class="idcam__slot" id="idcam-back-slot">
+                <p class="face__caption" id="idcam-back-caption">Back side</p>
+                <div class="face__frame face__frame--card" id="idcam-back-frame" data-state="idle">
+                  <video id="idcam-back-video" playsinline muted hidden></video>
+                  <img id="idcam-back-shot" alt="Captured back side of valid ID" hidden>
+                  <canvas id="idcam-back-canvas" hidden></canvas>
+                  <span class="face__guide face__guide--card" aria-hidden="true"></span>
+                  <span class="face__badge" id="idcam-back-badge" aria-live="polite" hidden></span>
+                </div>
+                <div class="face__controls">
+                  <button class="ghostbtn" type="button" id="idcam-back-start">
+                    <svg aria-hidden="true"><use href="#i-camera"/></svg>
+                    <span>Start camera</span>
+                  </button>
+                  <button class="ghostbtn" type="button" id="idcam-back-capture" hidden>
+                    <svg aria-hidden="true"><use href="#i-scan"/></svg>
+                    <span>Capture back</span>
+                  </button>
+                  <button class="ghostbtn" type="button" id="idcam-back-retake" hidden>
+                    <svg aria-hidden="true"><use href="#i-refresh"/></svg>
+                    <span>Retake</span>
+                  </button>
+                </div>
+              </div>
+
+              <p class="field__error face__error" id="idcam-error" role="alert" hidden></p>
+            </div>
+
+          </div>
+
+          <div class="stepnav">
+            <button class="btn" type="button" data-next>
+              <span class="btn__label">Continue</span>
+              <svg class="btn__arrow" aria-hidden="true"><use href="#i-arrow"/></svg>
+            </button>
+          </div>
+
+        </div>
+
+        <!-- ============ Step 2 — Agency &amp; security ============ -->
+
+        <div class="step" data-step="2" hidden>
+
+          <div class="form-grid">
+
+            <div class="field">
+              <label class="field__label" for="unit">Unit / account type <span class="req">*</span></label>
+              <div class="field__box">
+                <svg class="field__icon" aria-hidden="true"><use href="#i-shield"/></svg>
+                <select class="field__input field__select" id="unit" name="unit"
+                        aria-describedby="unit-error">
+                  <option value="responder" selected>Responder — emergency response personnel</option>
+                  <option value="security">Security — site security personnel</option>
+                </select>
+                <svg class="field__chevron" aria-hidden="true"><use href="#i-chevron"/></svg>
+              </div>
+              <p class="field__error" id="unit-error" role="alert" hidden></p>
+            </div>
+
+            <div class="field" id="employee-field">
+              <label class="field__label" for="employee-id">Employee ID <span class="req">*</span></label>
+              <div class="field__box">
+                <svg class="field__icon" aria-hidden="true"><use href="#i-badge"/></svg>
+                <input class="field__input" id="employee-id" name="employeeId" type="text"
+                       value="BFP-NCR-904821" autocomplete="off" spellcheck="false"
+                       aria-describedby="employee-id-error">
+              </div>
+              <p class="field__error" id="employee-id-error" role="alert" hidden></p>
+            </div>
+
+            <div class="field" id="station-field">
+              <label class="field__label" for="station">Station / sub-command jurisdiction <span class="req">*</span></label>
+              <div class="field__box">
+                <svg class="field__icon" aria-hidden="true"><use href="#i-pin"/></svg>
+                <select class="field__input field__select" id="station" name="station"
+                        aria-describedby="station-error">
+                  <option value="">Select station…</option>
+                  <option value="ldrrmo" selected>LDRRMO — Katipunan (Local Disaster Risk Reduction and Management Office)</option>
+                  <option value="pnp">PNP — Katipunan Municipal Police Station</option>
+                  <option value="bfp">BFP — Katipunan Fire Station</option>
+                  <option value="rhu">RHU — Katipunan Rural Health Unit</option>
+                </select>
+                <svg class="field__chevron" aria-hidden="true"><use href="#i-chevron"/></svg>
+              </div>
+              <p class="field__error" id="station-error" role="alert" hidden></p>
+            </div>
+
+            <div class="field field--password">
+              <div class="field__row">
+                <label class="field__label" for="password">Create password <span class="req">*</span></label>
+                <span class="strength" id="strength" data-tone="ok">&nbsp;</span>
+              </div>
+              <div class="field__box">
+                <svg class="field__icon" aria-hidden="true"><use href="#i-lock"/></svg>
+                <input class="field__input" id="password" name="password" type="password"
+                       value="Oper4ti0na1#Key2025" autocomplete="new-password"
+                       aria-describedby="password-error">
+                <button class="field__toggle" type="button" id="pw-toggle"
+                        aria-pressed="false" aria-label="Show password" aria-controls="password">
+                  <svg class="field__toggle-on" aria-hidden="true"><use href="#i-eye"/></svg>
+                  <svg class="field__toggle-off" aria-hidden="true" hidden><use href="#i-eye-off"/></svg>
+                </button>
+              </div>
+              <p class="field__error" id="password-error" role="alert" hidden></p>
+            </div>
+
+            <div class="field field--password">
+              <label class="field__label" for="confirm">Confirm password <span class="req">*</span></label>
+              <div class="field__box">
+                <svg class="field__icon" aria-hidden="true"><use href="#i-lock"/></svg>
+                <input class="field__input" id="confirm" name="confirm" type="password"
+                       value="Oper4ti0na1#Key2025" autocomplete="new-password"
+                       aria-describedby="confirm-error">
+              </div>
+              <p class="field__error" id="confirm-error" role="alert" hidden></p>
+            </div>
+
+          </div>
+
+          <div class="section">
+            <p class="section__label">Credentials</p>
+            <div class="dropzone" id="dropzone" role="button" tabindex="0"
+                 aria-describedby="dropzone-hint">
+              <span class="dropzone__ring" aria-hidden="true"><svg><use href="#i-upload"/></svg></span>
+              <p class="dropzone__title">Upload Official DepEd / DILG / Agency ID or drop encrypted certificate (<code>.p12</code>, <code>.crt</code>)</p>
+              <p class="dropzone__hint" id="dropzone-hint">Accepted: PDF, PNG, JPG, or X.509 Cryptographic Certificate (Max 15MB)</p>
+            </div>
+            <input type="file" id="file-input" class="visually-hidden"
+                   accept=".pdf,.png,.jpg,.jpeg,.p12,.crt" aria-describedby="dropzone-hint">
+            <p class="field__error" id="file-input-error" role="alert" hidden></p>
+            <p class="dropzone__file" id="file-name" hidden></p>
+          </div>
+
+          <div class="stepnav">
+            <button class="btn btn--ghost" type="button" data-back>
+              <span class="btn__label">Back</span>
+            </button>
+            <button class="btn" type="button" data-next>
+              <span class="btn__label">Continue</span>
+              <svg class="btn__arrow" aria-hidden="true"><use href="#i-arrow"/></svg>
+            </button>
+          </div>
+
+        </div>
+
+        <!-- ============ Step 3 — Double authentication ============ -->
+
+        <div class="step" data-step="3" hidden>
+
+          <div class="section">
+            <p class="section__label">Double authentication — face recognition</p>
+
+            <div class="face">
+              <div class="face__ref">
+                <p class="face__caption">Reference ID</p>
+                <div class="face__thumb">
+                  <img id="id-ref-front" alt="Captured front side of valid ID" hidden>
+                  <p class="face__hint" id="id-ref-hint">Capture your valid ID in step 1</p>
+                </div>
+                <div class="face__thumb face__thumb--back" id="id-ref-back-thumb" hidden>
+                  <img id="id-ref-back" alt="Captured back side of valid ID" hidden>
+                </div>
+              </div>
+              <div class="face__cam">
+                <p class="face__caption">Live capture</p>
+                <div class="face__frame" id="face-frame" data-state="idle">
+                  <video id="face-video" playsinline muted hidden></video>
+                  <img id="face-shot" alt="Captured face preview" hidden>
+                  <canvas id="face-canvas" hidden></canvas>
+                  <span class="face__guide" aria-hidden="true"></span>
+                  <span class="face__scan" aria-hidden="true"></span>
+                  <span class="face__badge" id="face-badge" aria-live="polite" hidden></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="face__controls">
+              <button class="ghostbtn" type="button" id="face-start">
+                <svg aria-hidden="true"><use href="#i-camera"/></svg>
+                <span>Start camera</span>
+              </button>
+              <button class="ghostbtn" type="button" id="face-capture" hidden>
+                <svg aria-hidden="true"><use href="#i-scan"/></svg>
+                <span>Capture</span>
+              </button>
+              <button class="ghostbtn" type="button" id="face-retake" hidden>
+                <svg aria-hidden="true"><use href="#i-refresh"/></svg>
+                <span>Retake</span>
+              </button>
+            </div>
+
+            <p class="field__error face__error" id="face-error" role="alert" hidden></p>
+          </div>
+
+          <div class="consents">
+            <label class="check check--block" for="consent-1">
+              <input type="checkbox" id="consent-1" name="consent1" checked aria-describedby="consent-1-error">
+              <span class="check__box" aria-hidden="true"><svg><use href="#i-tick"/></svg></span>
+              <span class="check__text">I certify official government affiliation and consent to continuous surveillance audit logging under Republic Act 10173 &amp; RA 10121.</span>
+            </label>
+            <p class="field__error" id="consent-1-error" role="alert" hidden></p>
+
+            <label class="check check--block" for="consent-2">
+              <input type="checkbox" id="consent-2" name="consent2" checked aria-describedby="consent-2-error">
+              <span class="check__box" aria-hidden="true"><svg><use href="#i-tick"/></svg></span>
+              <span class="check__text">I acknowledge false jurisdiction claims or simulated dispatch requests carry immediate federal prosecution.</span>
+            </label>
+            <p class="field__error" id="consent-2-error" role="alert" hidden></p>
+          </div>
+
+          <div class="stepnav">
+            <button class="btn btn--ghost" type="button" data-back>
+              <span class="btn__label">Back</span>
+            </button>
+            <button class="btn" type="submit" id="submit">
+              <span class="btn__label">Create account</span>
+              <svg class="btn__arrow" aria-hidden="true"><use href="#i-arrow"/></svg>
+              <span class="btn__spinner" aria-hidden="true"></span>
+            </button>
+          </div>
+
+        </div>
+
+        <p class="status" id="status" role="status" aria-live="polite"></p>
+
+        <p class="panel__foot"><a class="link" href="index.html">Back to sign in</a></p>
+
+      </form>
+    </section>
+
+  </div>
+</main>
+
+<script src="register.js"></script>
+</body>
+</html>

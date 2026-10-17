@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ResQtrack — Settings</title>
+<meta name="description" content="ResQtrack — platform settings for Katipunan emergency response.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&family=Montserrat:wght@600;700;800&display=swap">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="dashboard.css">
+<link rel="stylesheet" href="settings.css">
+</head>
+<body class="app-shell">
+
+<svg class="sprite" aria-hidden="true" focusable="false">
+  <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m16.2 16.2 4.3 4.3"/></symbol>
+  <symbol id="i-bell" viewBox="0 0 24 24"><path d="M18 8.4a6 6 0 1 0-12 0c0 6.2-2.6 7.6-2.6 7.6h17.2S18 14.6 18 8.4z"/><path d="M10.3 20a2 2 0 0 0 3.4 0"/></symbol>
+  <symbol id="i-gear" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></symbol>
+  <symbol id="i-help" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M9.2 9.2a2.9 2.9 0 0 1 5.6 1c0 1.9-2.8 2.4-2.8 4"/><path d="M12 17.4h.01"/></symbol>
+  <symbol id="i-user" viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></symbol>
+  <symbol id="i-grid" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/></symbol>
+  <symbol id="i-alert" viewBox="0 0 24 24"><path d="M12 4 2.8 20h18.4L12 4z"/><path d="M12 10v4.5"/><path d="M12 17.6h.01"/></symbol>
+  <symbol id="i-people" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.4"/><path d="M3.4 20v-1.5a5.6 5.6 0 0 1 11.2 0V20"/><path d="M16 5.4a3.4 3.4 0 0 1 0 5.2"/><path d="M17.4 13.9a5.6 5.6 0 0 1 3.2 4.6V20"/></symbol>
+  <symbol id="i-sliders" viewBox="0 0 24 24"><path d="M4 21v-7"/><path d="M4 10V3"/><path d="M12 21v-9"/><path d="M12 8V3"/><path d="M20 21v-5"/><path d="M20 12V3"/><path d="M1.5 14h5"/><path d="M9.5 8h5"/><path d="M17.5 16h5"/></symbol>
+  <symbol id="i-chip" viewBox="0 0 24 24"><rect x="7" y="7" width="10" height="10" rx="1.8"/><rect x="10.4" y="10.4" width="3.2" height="3.2" rx="0.6"/><path d="M10 3v4"/><path d="M14 3v4"/><path d="M10 17v4"/><path d="M14 17v4"/><path d="M3 10h4"/><path d="M3 14h4"/><path d="M17 10h4"/><path d="M17 14h4"/></symbol>
+  <symbol id="i-id-card" viewBox="0 0 24 24"><rect x="2.5" y="5" width="19" height="14" rx="2"/><circle cx="8.5" cy="10.8" r="2.1"/><path d="M4.9 16.4a3.9 3.9 0 0 1 7.2 0"/><path d="M15 10h4"/><path d="M15 13.4h4"/></symbol>
+  <symbol id="i-megaphone" viewBox="0 0 24 24"><path d="M13.5 5 5 9H4a1.8 1.8 0 0 0-1.8 1.8v2.4A1.8 1.8 0 0 0 4 15h1l8.5 4V5z"/><path d="M17 9.2a4 4 0 0 1 0 5.6"/><path d="M19.6 6.8a7.6 7.6 0 0 1 0 10.4"/></symbol>
+  <symbol id="i-chevron" viewBox="0 0 24 24"><path d="m6 9.5 6 6 6-6"/></symbol>
+</svg>
+
+<header class="topbar">
+  <div class="brandbar">
+    <span class="brandbar__mark">Res<span class="brandbar__accent">Qtrack</span></span>
+    <span class="brandbar__sub">Katipunan Emergency Response</span>
+  </div>
+
+  <form class="search" id="search-form" role="search">
+    <svg class="search__icon" aria-hidden="true"><use href="#i-search"/></svg>
+    <input class="search__input" id="search" type="search" name="q"
+           placeholder="Search coordinates, incident ID, or responder..."
+           autocomplete="off" spellcheck="false"
+           aria-label="Search platform settings">
+  </form>
+
+  <div class="topbar__actions">
+    <button class="iconbtn" type="button" id="btn-alerts" aria-label="Alerts, 1 unread">
+      <svg aria-hidden="true"><use href="#i-bell"/></svg>
+      <span class="iconbtn__dot" aria-hidden="true"></span>
+    </button>
+    <button class="iconbtn iconbtn--desk" type="button" id="btn-settings" aria-label="Settings">
+      <svg aria-hidden="true"><use href="#i-gear"/></svg>
+    </button>
+    <button class="iconbtn iconbtn--desk" type="button" id="btn-help" aria-label="Help">
+      <svg aria-hidden="true"><use href="#i-help"/></svg>
+    </button>
+    <span class="topbar__sep" aria-hidden="true"></span>
+    <button class="userchip" type="button" id="btn-user" aria-label="Signed in as Responder, ID OP-773-567-009">
+      <span class="userchip__avatar" aria-hidden="true"><svg><use href="#i-user"/></svg></span>
+      <span class="userchip__meta">
+        <span class="userchip__name">Responder</span>
+        <span class="userchip__id">ID: OP-773-567-009</span>
+      </span>
+    </button>
+  </div>
+</header>
+
+<div class="dash">
+  <aside class="sidebar">
+    <nav class="nav" aria-label="Primary">
+      <a class="nav__item" href="dashboard.html">
+        <svg class="nav__icon" aria-hidden="true"><use href="#i-grid"/></svg>
+        <span class="nav__label">Dashboard</span>
+      </a>
+      <a class="nav__item" href="incidents.html">
+        <svg class="nav__icon" aria-hidden="true"><use href="#i-alert"/></svg>
+        <span class="nav__label">Incidents</span>
+      </a>
+      <a class="nav__item" href="responders.html">
+        <svg class="nav__icon" aria-hidden="true"><use href="#i-people"/></svg>
+        <span class="nav__label">Responders</span>
+      </a>
+      <a class="nav__item is-active" href="settings.html" aria-current="page">
+        <svg class="nav__icon" aria-hidden="true"><use href="#i-sliders"/></svg>
+        <span class="nav__label">Settings</span>
+      </a>
+      <a class="nav__item" href="admin.html">
+        <svg class="nav__icon" aria-hidden="true"><use href="#i-user"/></svg>
+        <span class="nav__label">Admin</span>
+      </a>
+    </nav>
+  </aside>
+
+  <main class="setboard" aria-label="Platform settings">
+    <div class="set-board">
+
+      <header class="set-head">
+        <div class="set-head__text">
+          <h1 class="set-head__title">Platform Settings</h1>
+          <p class="set-head__meta">SYS_CONFIG_v2.4.1&nbsp;&nbsp;//&nbsp;&nbsp;TACTICAL_OVERRIDE_ENABLED</p>
+        </div>
+        <button class="save-btn" type="button" id="save-btn">
+          <span class="save-btn__label" id="save-label">Save Configuration</span>
+        </button>
+      </header>
+
+      <div class="set-grid">
+
+        <section class="card sys" aria-labelledby="sys-title">
+          <header class="card__head">
+            <svg class="card__icon" aria-hidden="true"><use href="#i-chip"/></svg>
+            <h2 class="card__title" id="sys-title">System Configuration</h2>
+          </header>
+
+          <div class="sys__fields">
+            <div class="fld">
+              <label class="fld__label" for="threshold">Global Alert Threshold</label>
+              <div class="fld__slider">
+                <input class="slider" type="range" id="threshold" min="1" max="10" step="1" value="7"
+                       aria-describedby="threshold-num">
+                <span class="threshold">
+                  <span class="threshold__level">Lv1</span>
+                  <span class="threshold__num" id="threshold-num">7</span>
+                </span>
+              </div>
+            </div>
+
+            <div class="fld">
+              <label class="fld__label" for="telemetry">Telemetry Refresh Rate</label>
+              <div class="select">
+                <select class="select__input" id="telemetry">
+                  <option value="1" selected>Real-time (1s)</option>
+                  <option value="5">Standard (5s)</option>
+                  <option value="15">Relaxed (15s)</option>
+                  <option value="30">Low bandwidth (30s)</option>
+                </select>
+                <svg class="select__chevron" aria-hidden="true"><use href="#i-chevron"/></svg>
+              </div>
+            </div>
+          </div>
+
+          <p class="sys__desc">Defines the minimum severity level to trigger command center sirens.</p>
+
+          <aside class="override">
+            <svg class="override__icon" aria-hidden="true"><use href="#i-alert"/></svg>
+            <div class="override__body">
+              <p class="override__title">Critical Override Protocol</p>
+              <p class="override__text">Manual dispatch override is currently enabled. System AI will not auto-assign units without human confirmation.</p>
+            </div>
+          </aside>
+        </section>
+
+        <section class="card profile" aria-labelledby="profile-title">
+          <header class="card__head">
+            <svg class="card__icon" aria-hidden="true"><use href="#i-id-card"/></svg>
+            <h2 class="card__title" id="profile-title">Profile Settings</h2>
+          </header>
+
+          <img class="profile__avatar" src="img/operator-avatar.png"
+               alt="Operator credential badge" width="91" height="91">
+          <button class="profile__update" type="button" id="btn-credentials">Update Credentials</button>
+
+          <dl class="profile__fields">
+            <div class="profile__group">
+              <dt class="profile__label">Operator ID</dt>
+              <dd class="profile__value profile__value--mono">OPR-9942-A</dd>
+            </div>
+            <div class="profile__group">
+              <dt class="profile__label">Assigned Station</dt>
+              <dd class="profile__value">LDRRMO — Katipunan</dd>
+            </div>
+          </dl>
+        </section>
+
+      </div>
+
+      <section class="card notify" aria-labelledby="notify-title">
+        <header class="card__head">
+          <svg class="card__icon" aria-hidden="true"><use href="#i-megaphone"/></svg>
+          <h2 class="card__title" id="notify-title">Notification Routing</h2>
+        </header>
+
+        <div class="routing">
+          <div class="routing__tile">
+            <div class="routing__meta">
+              <p class="routing__name">Terminal Audio</p>
+              <p class="routing__code">SYS.SND.ALRT</p>
+            </div>
+            <button class="switch is-on" type="button" role="switch"
+                    aria-checked="true" data-channel="terminal" aria-label="Terminal Audio"></button>
+          </div>
+
+          <div class="routing__tile">
+            <div class="routing__meta">
+              <p class="routing__name">Push to Mobile</p>
+              <p class="routing__code">NET.PUSH.MOB</p>
+            </div>
+            <button class="switch is-on" type="button" role="switch"
+                    aria-checked="true" data-channel="push" aria-label="Push to Mobile"></button>
+          </div>
+
+          <div class="routing__tile">
+            <div class="routing__meta">
+              <p class="routing__name">SMS Fallback</p>
+              <p class="routing__code">NET.SMS.SEC</p>
+            </div>
+            <button class="switch" type="button" role="switch"
+                    aria-checked="false" data-channel="sms" aria-label="SMS Fallback"></button>
+          </div>
+
+          <div class="routing__tile">
+            <div class="routing__meta">
+              <p class="routing__name">Daily Log Digest</p>
+              <p class="routing__code">CRON.MAIL.LOG</p>
+            </div>
+            <button class="switch" type="button" role="switch"
+                    aria-checked="false" data-channel="digest" aria-label="Daily Log Digest"></button>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+</div>
+
+<nav class="tabbar" aria-label="Primary">
+  <a class="tabbar__item" href="dashboard.html">
+    <svg class="tabbar__icon" aria-hidden="true"><use href="#i-grid"/></svg>
+    <span class="tabbar__label">Dashboard</span>
+  </a>
+  <a class="tabbar__item" href="incidents.html">
+    <svg class="tabbar__icon" aria-hidden="true"><use href="#i-alert"/></svg>
+    <span class="tabbar__label">Incidents</span>
+  </a>
+  <a class="tabbar__item" href="responders.html">
+    <svg class="tabbar__icon" aria-hidden="true"><use href="#i-people"/></svg>
+    <span class="tabbar__label">Responders</span>
+  </a>
+  <a class="tabbar__item is-active" href="settings.html" aria-current="page">
+    <svg class="tabbar__icon" aria-hidden="true"><use href="#i-sliders"/></svg>
+    <span class="tabbar__label">Settings</span>
+  </a>
+  <a class="tabbar__item" href="admin.html">
+    <svg class="tabbar__icon" aria-hidden="true"><use href="#i-user"/></svg>
+    <span class="tabbar__label">Admin</span>
+  </a>
+</nav>
+
+<p class="toast" id="toast" role="status" aria-live="polite"></p>
+
+<script src="data/incidents.js"></script>
+<script src="settings.js"></script>
+<script src="notifications.js"></script>
+<script src="session.js"></script>
+</body>
+</html>
